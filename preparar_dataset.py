@@ -15,13 +15,32 @@ VAL_RATIO = 0.15
 TEST_RATIO = 0.05
 
 RANDOM_SEED = 42
-
+# ============================================================
+# hollaaaaaaaa
+# ============================================================
 
 # ============================================================
 # CLASE PRINCIPAL
 # ============================================================
 
 class DatasetPreparator:
+
+    def __init__(self, root):
+
+        self.root = root
+
+        self.root.title("Preparador de Dataset YOLO")
+        self.root.geometry("850x650")
+        self.root.configure(bg="#111827")
+
+        self.dataset_dir = None
+        self.labels_dir = None
+        self.output_dir = None
+        self.class_name = None
+
+        self.build_interface()
+
+        class DatasetPreparator:
 
     def __init__(self, root):
 
